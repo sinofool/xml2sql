@@ -53,6 +53,8 @@ namespace xml2sql
                     resultText.AppendLine();
                 }
             }
+            
+            Clipboard.SetText(resultText.ToString());
 
             TextResult formResult = new TextResult();
             formResult.txtResult.Text = resultText.ToString();
