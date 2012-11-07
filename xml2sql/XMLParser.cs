@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml.XPath;
+using System.Xml;
 
 namespace xml2sql
 {
@@ -17,7 +18,9 @@ namespace xml2sql
 
         public List<List<string> > output(string loopFor, Dictionary<string, string> columns)
         {
-            XPathDocument doc = new XPathDocument(this.filePath);
+            XmlTextReader reader = new XmlTextReader(this.filePath);
+            reader.XmlResolver = null;
+            XPathDocument doc = new XPathDocument(reader);
             XPathNavigator nav = doc.CreateNavigator();
             XPathNodeIterator iter = nav.Select(loopFor);
             List<List<string>> rows = new List<List<string>>();
