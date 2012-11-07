@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xml2sql", "xml2sql\xml2sql.csproj", "{367616D7-B08E-4A32-961D-2DD0F45989E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{367616D7-B08E-4A32-961D-2DD0F45989E3}.Debug|x86.ActiveCfg = Debug|x86
+		{367616D7-B08E-4A32-961D-2DD0F45989E3}.Debug|x86.Build.0 = Debug|x86
+		{367616D7-B08E-4A32-961D-2DD0F45989E3}.Release|x86.ActiveCfg = Release|x86
+		{367616D7-B08E-4A32-961D-2DD0F45989E3}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
